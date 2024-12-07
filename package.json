@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.27.4",
+		"@sveltejs/kit": "^2.8.3",
 		"autoprefixer": "^10.4.20",
 		"dayjs": "^1.11.13",
 		"postcss": "^8.4.49",
