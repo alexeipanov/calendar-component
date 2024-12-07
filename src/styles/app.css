@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans p-4 h-screen;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  color-scheme: var(--tg-color-scheme);
+}
+
+body:has([popover]:popover-open) {
+  pointer-events: none;
+}
+
+h1, h2, h3 {
+  @apply font-bold my-1 mx-0
+}
+
+h1 {
+  @apply font-bold text-xl my-1 mx-0;
+}
+
+h2 {
+  color: var(--tg-theme-subtitle-text-color);
+}
+
+a {
+  color: var(--tg-theme-link-color);
+}
+
+header {
+	background-color: var(--tg-theme-header-bg-color);
+}
+
+section {
+	background-color: var(--tg-theme-section-bg-color);
+}
+
+section .header {
+	color: var(--tg-theme-section-header-text-color);
+}
+
+section .separator {
+	color: var(--tg-theme-section-separator-color);
+}
+
+.subtitle {
+	color: var(--tg-theme-subtitle-text-color);
+}
+
+.danger {
+	color: var(--tg-theme-destructive-text-color);
+}
+
+.success {
+  @apply text-lime-500;
+}
+
+.hint {
+	color: var(--tg-theme-hint-color);
+}
+
+.accent {
+	color: var(--tg-theme-accent-text-color);
+}
+
+.alternate a {
+	color: var(--tg-theme-link-color);
+}
+
+#viewport {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--tg-viewport-stable-height, 100vh);
+  pointer-events: none;
+  transition: all .2s ease;
+}
+
+.modal {
+  pointer-events: auto;
+  background-color: var(--tg-theme-bg-color);
+  @apply w-full mb-0 p-4 rounded-t-2xl;
+}
+
+.modal h1 {
+  @apply my-0 leading-none;
+}
+
+[popover]:popover-open {
+  @apply opacity-100;
+}
+
+[popover] {
+  @apply opacity-0 transition-opacity;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+  }
+}
+
+[popover]::backdrop {
+  @apply opacity-0 transition-opacity;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, .125);
+}
+
+[popover]:popover-open::backdrop {
+  @apply opacity-100;
+}
+
+@starting-style {
+  [popover]:popover-open::backdrop {
+    opacity: 0;
+  }
+}
