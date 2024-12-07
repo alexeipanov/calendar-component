@@ -111,7 +111,6 @@ export default class Calendar {
   }
 
   setYear(year) {
-    debugger;
     this.month = this.month.year(year.year());
   }
 }

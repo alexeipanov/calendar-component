@@ -2,8 +2,10 @@
   import dayjs from 'dayjs';
   import '/src/styles/app.css';
   import Calendar from '/src/components/Calendar.svelte';
+  import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
   let date = dayjs();
+
 
   const onSelect = (newDate) => {
     date = newDate;

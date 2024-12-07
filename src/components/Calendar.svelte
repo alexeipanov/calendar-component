@@ -29,7 +29,6 @@
   }
 
   const setYear = (year) => {
-    console.log('set year')
     calendar.setYear(year);
     calendar = calendar;
   }
@@ -52,7 +51,7 @@
           <button
             class="year-option"
             class:active={date.year() === year.year()}
-            on:click={() => {console.log('click');setYear(year);}}
+            on:click={() => setYear(year)}
           >
             {dateFormat(year, "YYYY")}sdf
           </button>
