@@ -53,7 +53,7 @@
             class:active={date.year() === year.year()}
             on:click={() => setYear(year)}
           >
-            {dateFormat(year, "YYYY")}sdf
+            {dateFormat(year, "YYYY")}
           </button>
         {/each}
       </div>

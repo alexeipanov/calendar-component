@@ -32,7 +32,7 @@
   });
 </script>
 
-<button disabled class="cursor-hand pl-2 hover:bg-[var(--tg-theme-secondary-bg-color)] rounded-full" on:click={toggle} bind:this={button}>
+<button class="cursor-hand pl-2 hover:bg-[var(--tg-theme-secondary-bg-color)] rounded-full" on:click={toggle} bind:this={button}>
   <div class="flex items-center"><span>{label}</span><div class="icon">{#if isOpen}<ChevronUp />{:else}<ChevronDown />{/if}</div></div>
 </button>
 

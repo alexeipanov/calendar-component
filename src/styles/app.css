@@ -9,10 +9,6 @@ body {
   color-scheme: var(--tg-color-scheme);
 }
 
-body:has([popover]:popover-open) {
-  pointer-events: none;
-}
-
 h1, h2, h3 {
   @apply font-bold my-1 mx-0
 }
