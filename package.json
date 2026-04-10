@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.1.1",
-		"@sveltejs/kit": "^1.30.4",
+		"@sveltejs/kit": "^2.57.1",
 		"@vercel/analytics": "^1.4.1",
 		"autoprefixer": "^10.4.20",
 		"dayjs": "^1.11.13",
